@@ -4,10 +4,7 @@ import at.htl.model.Person;
 import at.htl.repository.PersonRepository;
 import io.quarkus.runtime.Quarkus;
 import io.quarkus.runtime.QuarkusApplication;
-
-import javax.inject.Inject;
-import javax.persistence.EntityManager;
-import javax.transaction.Transactional;
+import jakarta.inject.Inject;
 
 public class JpaTryouts implements QuarkusApplication {
 
@@ -24,6 +21,5 @@ public class JpaTryouts implements QuarkusApplication {
         Quarkus.asyncExit();
         return 0;
     }
-
 
 }
